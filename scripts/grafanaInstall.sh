@@ -4,5 +4,6 @@ sudo apt-get update -y
 sudo apt-get install grafana -y
 sudo systemctl daemon-reload
 sudo systemctl start grafana-server
+sudo systemctl enable grafana-server.service
 echo "Your grafana dashboard should be now available at the ip address below:"
-echo "http://" + $(/sbin/ip -o -4 addr list eth0 | awk '{print $4}' | cut -d/ -f1) + ":3000"
+echo "http://$(/sbin/ip -o -4 addr list eth0 | awk '{print $4}' | cut -d/ -f1):3000"
