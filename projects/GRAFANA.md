@@ -3,5 +3,5 @@
 ## Install grafana
 
 ```
-Test
+curl https://raw.githubusercontent.com/User5029/Projects/master/scripts/grafanaInstall.sh | bash
 ```
