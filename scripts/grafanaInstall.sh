@@ -1,6 +1,8 @@
 #!/bin/bash
 
 sudo echo "Installing Grafana..."
+sudo echo "This script does everything for you."
+sudo echo "Please wait patiently, this may take a while..."
 {
 echo "deb https://packages.grafana.com/enterprise/deb stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
 wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
